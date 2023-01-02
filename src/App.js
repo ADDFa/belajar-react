@@ -1,5 +1,8 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from './logo.svg'
+import './App.css'
+import TestComponent from './TestComponent'
+import StateComponent from './StatefulComponent'
+import StatefulChange from './StatefulChange'
 
 function App() {
   return (
@@ -18,8 +21,11 @@ function App() {
           Learn React
         </a>
       </header>
+      <TestComponent properti={`"Ini Default Yang Dikirimkan"`} />
+      <StateComponent />
+      <StatefulChange />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
